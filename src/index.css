@@ -1,0 +1,153 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Azure IoT Dashboard Design System */
+    --background: 210 14% 97%;
+    --foreground: 215 25% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 20%;
+
+    /* Azure Blue Primary */
+    --primary: 207 82% 45%;
+    --primary-foreground: 0 0% 98%;
+    --primary-glow: 207 82% 60%;
+
+    --secondary: 210 13% 96%;
+    --secondary-foreground: 215 25% 20%;
+
+    --muted: 210 13% 94%;
+    --muted-foreground: 215 16% 46%;
+
+    --accent: 207 82% 45%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 98%;
+
+    --success: 142 72% 35%;
+    --success-foreground: 0 0% 98%;
+
+    --warning: 32 95% 44%;
+    --warning-foreground: 0 0% 98%;
+
+    --border: 214 31% 91%;
+    --input: 214 31% 91%;
+    --ring: 207 82% 45%;
+
+    /* IoT Dashboard Specific */
+    --device-online: 142 72% 35%;
+    --device-offline: 15 25% 40%;
+    --device-warning: 32 95% 44%;
+    --device-error: 0 72% 51%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(207 82% 45%), hsl(207 82% 60%));
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%), hsl(210 13% 98%));
+    --gradient-success: linear-gradient(135deg, hsl(142 72% 35%), hsl(142 72% 45%));
+    
+    /* Shadows */
+    --shadow-card: 0 2px 8px -2px hsl(207 82% 45% / 0.08);
+    --shadow-elevated: 0 8px 32px -8px hsl(207 82% 45% / 0.12);
+    --shadow-glow: 0 0 24px hsl(207 82% 60% / 0.3);
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 215 28% 7%;
+    --foreground: 210 40% 98%;
+
+    --card: 217 28% 10%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 217 28% 10%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 207 82% 65%;
+    --primary-foreground: 215 28% 7%;
+    --primary-glow: 207 82% 75%;
+
+    --secondary: 217 20% 15%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217 20% 13%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 207 82% 65%;
+    --accent-foreground: 215 28% 7%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 210 40% 98%;
+
+    --success: 142 72% 35%;
+    --success-foreground: 210 40% 98%;
+
+    --warning: 32 95% 44%;
+    --warning-foreground: 215 28% 7%;
+
+    --border: 217 20% 18%;
+    --input: 217 20% 18%;
+    --ring: 207 82% 65%;
+
+    /* IoT Dashboard Specific - Dark */
+    --device-online: 142 72% 40%;
+    --device-offline: 15 25% 50%;
+    --device-warning: 32 95% 50%;
+    --device-error: 0 72% 55%;
+
+    /* Gradients - Dark */
+    --gradient-primary: linear-gradient(135deg, hsl(207 82% 55%), hsl(207 82% 75%));
+    --gradient-card: linear-gradient(180deg, hsl(217 28% 10%), hsl(217 20% 8%));
+    --gradient-success: linear-gradient(135deg, hsl(142 72% 35%), hsl(142 72% 45%));
+    
+    /* Shadows - Dark */
+    --shadow-card: 0 2px 8px -2px hsl(0 0% 0% / 0.2);
+    --shadow-elevated: 0 8px 32px -8px hsl(0 0% 0% / 0.3);
+    --shadow-glow: 0 0 24px hsl(207 82% 65% / 0.4);
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
