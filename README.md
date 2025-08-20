@@ -37,7 +37,7 @@ A visually-rich, real-time dashboard inspired by **Azure IoT Central**, built wi
 
 ## Simulated Data
 
-All sensor and device data is simulated using random values updated with JavaScript timers—see `useDeviceData.ts` for the simulation logic.
+All sensor and device data is simulated using random values updated with TypeScript timers—see `useDeviceData.ts` for the simulation logic.
 
 ## Customization
 
